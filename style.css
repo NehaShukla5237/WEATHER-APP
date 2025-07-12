@@ -1,0 +1,82 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --btn-color: #007BFF;
+  --btn-hover: #0056b3;
+  --card-bg: #f9f9f9;
+}
+
+body.dark-mode {
+  --bg-color: #1e1e1e;
+  --text-color: #ffffff;
+  --btn-color: #ff9800;
+  --btn-hover: #e65100;
+  --card-bg: #2c2c2c;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+  background: var(--card-bg);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  width: 320px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+#darkModeToggle {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.search-box input {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-box button {
+  padding: 10px 15px;
+  background-color: var(--btn-color);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.search-box button:hover {
+  background-color: var(--btn-hover);
+}
+
+.weather-info {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.weather-info img {
+  width: 80px;
+}
+
